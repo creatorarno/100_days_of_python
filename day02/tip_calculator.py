@@ -11,4 +11,5 @@ tip = float(input("How much tip would you like to give? 10, 12, 15?: "))
 split = int(input("How many people to split with?: "))
 
 # how much you got to pay
-print( (total_bill + tip) / split)
+my_bill = (total_bill + tip) / split
+print(f"You will have to pay ${my_bill : .2f}")
