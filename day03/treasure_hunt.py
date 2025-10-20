@@ -83,6 +83,24 @@ name = input(r"""
 print()
 
 # Get on a boat or jetski
-quest1 = input(r"""Choose a vehicle to reach the Treasure Island.
+#quest1 = input(r"""Choose a vehicle to reach the Treasure Island.
 
-Option Boat/Jetski: """)
+#Option Boat/Jetski: """)
+
+transport = ["boat", "jetski"]
+
+# create response based on input
+while True:
+  quest1 = input(r"""Choose a vehicle to reach the Treasure Island.
+
+Option Boat/Jetski: """).lower()
+  if quest1 in transport:
+    break
+  else:
+    print(f"Please select an option from {transport[0]} and {transport[1]}")
+
+
+if quest1 == "Boat":
+  print(f"{name} boarded the boat!")
+elif quest1 == "Jetski":
+  print(f"{name} got on Jetski")
