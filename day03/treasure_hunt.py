@@ -8,7 +8,7 @@ welcome = r"""              Welcome Player, to The Treasure Hunt Game.
              |=====/o/======================\o\=====|
              |____/_/________..____..________\_\____|
              /   _/ \_     <_o#\__/#o_>     _/ \_   \
-             \_________\####/_________/
+             \_________\####/_________/             /
               |===\!/========================\!/===|
               |   |=|          .---.         |=|   |
               |===|o|=========/     \========|o|===|
@@ -102,5 +102,8 @@ Option Boat/Jetski: """).lower()
 
 if quest1 == "Boat":
   print(f"{name} boarded the boat!")
+  
+
 elif quest1 == "Jetski":
   print(f"{name} got on Jetski")
+
